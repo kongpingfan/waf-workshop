@@ -1,0 +1,241 @@
+:root{
+
+    --MAIN-TEXT-color:#232F3E; /* Color of text by default */
+    --MAIN-TITLES-TEXT-color: #D45B07; /* Color of titles h2-h3-h4-h5 */
+    --MAIN-LINK-color:#02BDF3; /* Color of links */
+    --MAIN-LINK-HOVER-color:#0383A8; /* Color of hovered links */
+    --MAIN-ANCHOR-color: #02BDF3; /* color of anchors on titles */
+
+    --MENU-HEADER-BG-color:#161E2D; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color:#161E2D; /*Color of menu header border */
+
+    --MENU-SEARCH-BG-color:#202C3C; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color: #4D6584; /* Override search field border color */
+    --MENU-SEARCH-BOX-ICONS-color: #4D6584; /* Override search field icons color */
+
+    --MENU-SECTIONS-ACTIVE-BG-color:#232F3E; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color:#161E2D; /* Background color of other sections */
+    --MENU-SECTIONS-TEXT-color: #FF9900; /*Color of pre text */
+    --MENU-SECTIONS-LINK-color: #CCCCCC; /* Color of links in menu */
+    --MENU-SECTIONS-LINK-HOVER-color: #FFFFFF;  /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #232F3E; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #FFFFFF; /* Color of background for the active category (only) */
+    --MENU-SECTION-ACTIVE-CATEGORY-TEXT-color: #FF9900; /* Color of pre text when selected */
+
+    --MENU-VISITED-color: #02BDF3; /* Color of 'page visited' icons in menu */
+    --MENU-SECTION-HR-color: #20272B; /* Color of <hr> separator in menu */
+
+    /* Custom Vars */
+    --NAV-ARROWS-color: #02BDF3;
+    --NAV-ARROWS-HOVER-color: #0383A8;
+
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/AmazonEmber/AmazonEmber_Th.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: italic;
+    font-weight: 100;
+    src: url("../fonts/AmazonEmber/AmazonEmber_ThIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/AmazonEmber/AmazonEmber_Lt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: italic;
+    font-weight: 300;
+    src: url("../fonts/AmazonEmber/AmazonEmber_LtIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/AmazonEmber/AmazonEmber_Rg.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/AmazonEmber/AmazonEmber_RgIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/AmazonEmber/AmazonEmber_Md.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: italic;
+    font-weight: 500;
+    src: url("../fonts/AmazonEmber/AmazonEmber_MdIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/AmazonEmber/AmazonEmber_Bd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/AmazonEmber/AmazonEmber_BdIt.ttf") format("truetype");
+}
+
+body {
+    color: var(--MAIN-TEXT-color) !important;
+    font-family: "Amazon Ember", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+h1 {
+    text-transform: none !important;
+    font-family: "Amazon Ember", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+h2, h3, h4, h5 {
+    color: var(--MAIN-TITLES-TEXT-color) !important;
+    font-family: "Amazon Ember", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+a {
+    color: var(--MAIN-LINK-color);
+}
+
+.anchor {
+    color: var(--MAIN-ANCHOR-color);
+}
+
+a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+
+#sidebar {
+	background-color: var(--MENU-SECTIONS-BG-color);
+}
+
+#sidebar #header-wrapper {
+    background: var(--MENU-HEADER-BG-color);
+    color: var(--MENU-SEARCH-BOX-color);
+    border-color: var(--MENU-HEADER-BORDER-color);
+}
+
+#sidebar .searchbox {
+	border-color: var(--MENU-SEARCH-BOX-color);
+    background: var(--MENU-SEARCH-BG-color);
+}
+
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+    background: var(--MENU-SECTIONS-ACTIVE-BG-color);
+}
+
+#sidebar ul.topics li.parent ul, #sidebar ul.topics > li.active ul {
+    display: none !important;
+}
+
+#sidebar ul.topics li.parent > ul {
+    display: block !important;
+}
+
+#sidebar ul li.visited > a .read-icon {
+    color: var(--MENU-VISITED-color) !important;
+}
+
+#sidebar ul li.active > a {
+    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
+}
+
+#sidebar ul.topics > li > a b {
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-TEXT-color) !important;
+    opacity: 1 !important;
+}
+
+#sidebar .searchbox * {
+    color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar #shortcuts h3 {
+    color: white !important;
+    font-weight: 200 !important;
+    font-family: "Amazon Ember", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+#sidebar hr {
+    border-color: var(--MENU-SECTION-HR-color);
+}
+
+#sidebar a:hover {
+    color: var(--MENU-SECTIONS-LINK-HOVER-color);
+}
+
+#sidebar a {
+    color: var(--MENU-SECTIONS-LINK-color);
+}
+
+#sidebar a b, #sidebar a i {
+    color: var(--MENU-SECTIONS-TEXT-color) !important;
+}
+
+#body a.highlight:after {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    background-color: var(--MAIN-LINK-HOVER-color);
+}
+
+#body .tags a.tag-link {
+    background-color: var(--MENU-HEADER-BG-color);    
+}
+
+#body .tags a.tag-link:before {
+    border-right-color: var(--MENU-HEADER-BG-color);
+}
+
+#TableOfContents > ul > li > a   {
+    font-weight: 300 !important;
+}
+  
+#TableOfContents > ul > li > ul > li > a {
+    font-weight: 300 !important;
+}
+
+#navigation a.nav-prev, #navigation a.nav-next {
+    color: var(--NAV-ARROWS-color) !important;
+}
+
+#navigation a.nav-prev:hover, #navigation a.nav-next:hover  {
+    color: var(--NAV-ARROWS-HOVER-color) !important;
+}
+
+#chapter h3 {
+    font-family: "Amazon Ember", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}

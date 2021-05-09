@@ -1,0 +1,18 @@
+title = "AWS Workshop"
+
+languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= true
+
+theme = "learn"
+
+# Markup
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Search functionality
+[outputs]
+home = ["HTML","RSS","JSON"]
